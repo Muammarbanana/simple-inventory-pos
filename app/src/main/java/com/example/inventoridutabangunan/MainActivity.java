@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null;
         if (id == R.id.nav_camera) {
-            fragment = new DataBarang();
+            fragment = new HalamanDataBarang();
             displaySelectedFragment(fragment);
             return true;
         } else if (id == R.id.nav_gallery) {

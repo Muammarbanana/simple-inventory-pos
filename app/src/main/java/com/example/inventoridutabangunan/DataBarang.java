@@ -1,21 +1,67 @@
 package com.example.inventoridutabangunan;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+public class DataBarang {
+    private String namaBarang;
+    private String kodeBarang;
+    private String stokBarang;
+    private String satuanBarang;
+    private String hargaDasar;
+    private String hargaJual;
 
-public class DataBarang extends Fragment {
+    public DataBarang(String namaBarang, String kodeBarang, String stokBarang, String satuanBarang, String hargaDasar, String hargaJual) {
+        this.namaBarang = namaBarang;
+        this.kodeBarang = kodeBarang;
+        this.stokBarang = stokBarang;
+        this.satuanBarang = satuanBarang;
+        this.hargaDasar = hargaDasar;
+        this.hargaJual = hargaJual;
+    }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_data_barang, container, false);
+    public String getNamaBarang() {
+        return namaBarang;
+    }
 
-        return rootView;
+    public void setNamaBarang(String namaBarang) {
+        this.namaBarang = namaBarang;
+    }
+
+    public String getKodeBarang() {
+        return kodeBarang;
+    }
+
+    public void setKodeBarang(String kodeBarang) {
+        this.kodeBarang = kodeBarang;
+    }
+
+    public String getStokBarang() {
+        return stokBarang;
+    }
+
+    public void setStokBarang(String stokBarang) {
+        this.stokBarang = stokBarang;
+    }
+
+    public String getSatuanBarang() {
+        return satuanBarang;
+    }
+
+    public void setSatuanBarang(String satuanBarang) {
+        this.satuanBarang = satuanBarang;
+    }
+
+    public String getHargaDasar() {
+        return hargaDasar;
+    }
+
+    public void setHargaDasar(String hargaDasar) {
+        this.hargaDasar = hargaDasar;
+    }
+
+    public String getHargaJual() {
+        return hargaJual;
+    }
+
+    public void setHargaJual(String hargaJual) {
+        this.hargaJual = hargaJual;
     }
 }
