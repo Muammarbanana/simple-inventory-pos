@@ -6,4 +6,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="kode_barang">Kode Barang</string>
+    <string name="angka">000000</string>
+    <string name="satuan">satuan</string>
+    <string name="nama_barang">Nama Barang</string>
 </resources>
